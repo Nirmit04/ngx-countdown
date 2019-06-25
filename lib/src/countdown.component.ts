@@ -38,7 +38,7 @@ export class CountdownComponent implements OnInit, OnChanges, OnDestroy {
   private frequency = 1000;
   private _notify: any = {};
   private hands: Hand[] = [];
-  private left = 0;
+  public left = 0;
   private paused = false;
   /** 两种情况会触发：时间终止或调用 `stop()` */
   private stoped = false;
